@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Secret Agent Supply Inc.</title>
     <link href="./resources/css/reset.css" style="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" style="text/css" rel="stylesheet">
@@ -9,66 +10,66 @@
   <body>
     <!-- Header section -->
     <header>
-      <div class="banner">
+      <div class="banner site-width flex-container">
         <img src="./resources/img/logo.png">
-        <h3>SECRET AGENT SUPPLY INC. </h3>
+        <h2>SECRET AGENT SUPPLY INC. </h2>
       </div>
-
-      <!-- images -->
-      <div class="moto">
-        <div class="moto-container"
-          <h3>NEW ARRIVAL</h3>
-          <h1>SPORT BIKIES AND MOTORCYCLES</h1>
+      <div class="moto full-width flex-container">
+        <div class="text-box">
+          <h2>NEW ARRIVAL</h2>
+          <h1>SPORT BIKES AND MOTORCYCLES</h1>
         </div>
       </div>
 
-      <nav>
-          <span>Eyewear</span>
-          <span>Apparel</span>
-          <span>Gadgets</span>
-          <span>Vehicles</span>
-          <span>Glasses</span>
-          <span>Contact</span>
+      <nav class="menu full-width">
+        <ul class="site-width flex-container">
+          <li class="small-screen"><a href="#">Menu</a></li>
+          <li><a href="#">Eyeware</a></li>
+          <li><a href="#">Apparel</a></li>
+          <li><a href="#">Gadgets</a></li>
+          <li><a href="#">Vehicle</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
-
     </header>
 
+    <Section>
+      <div class="store site-width flex-container">
+        <div class="store-item">
+          <img src="./resources/img/pen.png">
+          <h2>Exploding Pen</h2>
+        </div>
 
-    <!-- Main section -->
+        <div class="store-item">
+          <img src="./resources/img/watch.png">
+          <h2>Cellular Watch</h2>
+        </div>
 
-    <div class="image container">
-
-      <div class="section">
-        <img src="./resources/img/pen.png">
-        <span>Exploding Pen</span>
-      </div>
-
-      <div class="section">
-        <img src="./resources/img/watch.png">
-        <span>Cellular Watch</span>
-      </div>
-
-      <div class="section">
-        <img src="./resources/img/glasses.png">
-        <span>Thermal Glasses</span>
-      </div>
-
-    </div>
-
-    <div class="info">
-      <div class="item">
-        <h3>Location</h3>
-        <span>-47.346436, 84.32354</span>
-      </div>
-      <div class="item">
-        <h3>Hours</h3>
-        <span>0800 - 1800</span>
+        <div class="store-item">
+          <img src="./resources/img/glasses.png">
+          <h2>Thermal Glasses</h2>
+        </div>
       </div>
     </div>
 
+    <div class="info site-width flex-container">
+      <div class="info-item location">
+        <h2>Location</h2>
+        <p>-47.346436, 84.32354</p>
+      </div>
+      <div class="info-item hours">
+        <h2>Hours</h2>
+        <p>0800 - 1800</p>
+      </div>
+    </div>
+  </section>
     <!-- Footer section -->
-    <footer>
-      <p>Copyright Secret Agent Supply Inc.</p>
+    <footer class="full-width flex-container">
+      <div class="site-width">
+        <h2>Copyright Secret Agent Supply Inc.</h2>
+      </div>
     </footer>
+
   </body>
 </html>

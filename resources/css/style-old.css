@@ -1,0 +1,171 @@
+/***** General *****/
+
+body {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.site-width {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+header .full-width {
+  background-color: black;
+}
+
+/***** header *****/
+/* banner */
+.banner {
+  position :fixed;
+  background-color: black;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+}
+
+.banner img {
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  height: 1.5rem;
+}
+
+.banner h3 {
+  font-size: 1rem;
+}
+
+/* moto container */
+.moto {
+  width: 100%;
+  height : 25rem;
+  background-image: url("../img/moto.jpeg");
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+  /*
+  padding-top: 9rem;
+  padding-left: 5rem;*/
+}
+
+.moto-container {
+  display: block;
+  /*text-wrap: wrap;*/
+  background-color: black;
+  width: 20rem;
+  padding: 2rem 3rem;
+  margin-top: 9rem;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.moto h1 {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+}
+
+nav {
+  display : block;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: firebrick;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+}
+
+nav h2 {
+  display: none;
+}
+
+nav a {
+  color: white;
+  font-size: 1rem;
+  padding-left: 5rem;
+}
+
+.image.container {
+  margin: 3rem;
+}
+
+.section {
+  width: 14rem;
+  display: inline-flex;
+  flex-flow: column;
+  border: 4px solid black;
+  margin: 2rem;
+}
+
+.section img {
+  height: 9rem;
+  width: 10rem;
+  align-items: center;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section span {
+  background-color: black;
+  font: white;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.info {
+  padding-left: 5rem;
+}
+
+.item {
+  width: 15rem;
+  display: inline-flex;
+  flex-flow: column;
+}
+
+.item h3 {
+  background-color: black;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: 3rem;
+}
+
+.item span {
+  color: black;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  height: 5rem;
+  align-items: center;
+}
+
+footer p {
+  text-align: left;
+  padding-left : 5rem;
+}
+
+}
+@media only screen and (max-width: 960px) {
+  ul {
+  }
+}
+/********** Screen less than 650 px ***********/
+@media only screen and (max-width: 650px) {
+
+}

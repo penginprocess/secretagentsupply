@@ -1,139 +1,227 @@
+/***** General *****/
+
 body {
-  color: white;
   font-size: 18px;
-  font-weight: bold;
   font-family: Helvetica, sans-serif;
+  color: white;
 }
 
-.banner {
-  display: flex;
-  position :fixed;
+body,
+.full-width {
   width: 100%;
-  height: 60px;
-  background-color: black;
+}
+
+.site-width {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
   align-items: center;
-  padding-left: 5rem;
 }
 
-.banner img {
-  padding-left: 0.5rem;
-  padding-right: 1rem;
-  height: 1.5rem;
-}
-
-.banner h3 {
+h2 {
   font-size: 1rem;
-  padding-top: 0.66rem;
-  padding-buttom: 0.66rem;
 }
 
+h1 {
+  font-size: 2rem;
+}
+/***** header *****/
+header {
+  background-color: black;
+}
+
+/* banner */
+.banner img {
+  height: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+.banner h2 {
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+}
+
+/* moto */
 .moto {
   background-image: url("../img/moto.jpeg");
+  height: 24rem;
+  background-repeat: no-repeat;
   background-size: cover;
-  height : 14rem;
-  padding-top: 9rem;
-  padding-left: 5rem;
 }
 
-.moto-container {
-  display: block;
-  /*text-wrap: wrap;*/
+.text-box {
+  width: 960px;
+  margin: 0;
   background-color: black;
+  font-weight: bold;
+  flex-flow: column;
+  padding: 2rem 3rem;
+  margin-top: 9rem;
   width: 20rem;
-  padding-top: 2rem;
-  padding-left: 3rem;
-  padding-bottom: 2rem;
-  padding-right: 3rem;
-  align-items: left;
-  justify-content: center;
 }
 
-.moto h1 {
-  font-size: 2rem;
-  padding-top: 0.5rem;
+.text-box h2 {
+  paddig-bottom: 0.25rem;
 }
 
-nav {
-  display : block;
+/* Menu, Nav-bar */
+nav.full-width {
+  background-color: firebrick;
+  margin-bottom: 3rem;
+}
+
+ul {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  background-color: firebrick;
+  justify-content: space-between;
 }
 
-nav span {
-  font-size: 1rem;
-  padding-left: 5rem;
+li {
+  display: inline;
+  list-style: none;
 }
 
-.image.container {
-  margin: 3rem;
+li a {
+  color: white;
+  text-decoration: none;
 }
 
-.section {
-  width: 14rem;
-  display: inline-flex;
+.small-screen {
+  display: none;
+}
+/***** main section *****/
+.store {
+  justify-content: space-between;
+}
+
+.store-item {
+  display: flex;
+  flex-flow: column;
+  width: 30%;
   flex-flow: column;
   border: 4px solid black;
-  margin: 2rem;
+  margin-bottom: 3rem;
+  justify-content: space-around;
 }
 
-.section img {
+.store-item img {
   height: 9rem;
-  width: 10rem;
-  align-items: center;
-  padding-left: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
-.section span {
+.store-item h2 {
   background-color: black;
-  font: white;
+  padding: 0.5rem 0;
   text-align: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
-.info {
-  padding-left: 5rem;
+.info  {
+  margin-bottom: 4rem;
+  justify-content: space-between;
 }
 
-.item {
-  width: 15rem;
-  display: inline-flex;
-  flex-flow: column;
+.info-item {
+  width: 30%;
 }
 
-.item h3 {
+.info-item  h2 {
   background-color: black;
-  padding-left: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-right: 3rem;
+  padding:1rem 2rem;
 }
 
-.item span {
+.info-item p {
   color: black;
-  padding-top: 1rem;
-  padding-bottom: 4rem;
+  background-color: white;
+  padding-top: .25rem;
 }
 
+
+.hours {
+  justify-content: flex-end;
+}
+/***** footer *****/
 footer {
-  display: flex;
   background-color: black;
   height: 5rem;
-  align-items: center;
 }
+/* media query */
+@media only screen and (max-width:1024px) {
+  .site-width {
+    width: 100%;
+  }
+  .site-width li,
+  .store .store-item:nth-child(3) {
+    display:none;
+  }
+  .text-box {
+    width: 20rem;
+  }
+  ul {
+    justify-content: center;
+  }
+  li.small-screen {
+    display:inline;
+  }
+  .store {
+    flex-wrap: wrap;
+  }
+  .store-item {
+    width: 47%;
+    height: 47%;
+  }
+  .info-item {
+    width: 35%;
+  }
 
-footer p {
-  text-align: left;
-  padding-left : 5rem;
 }
-
-}
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width:480px) {
+  .store-item,
+  .info-item {
+    width: 90%;
+  }
+  .site-width li {
+    display:none;
+  }
+  ul {
+    justify-content: center;
+  }
+  li.small-screen {
+    display:inline;
+  }
+  .store,
+  .info
    {
+    display: block;
+  }
+  .moto {
+    height: 15rem;
+  }
 
+  .moto h1 {
+    font-size: 1rem;
+  }
 
+  .moto h2 {
+    font-size: 0.77rem;
+  }
+
+  .store .store-item:nth-child(2) {
+    display:none;
+  }
+
+  .text-box {
+    margin-top: 10rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  .location {
+    margin-bottom: 0.5rem;
+  }
+  .site-width h2 {
+    text-align: center;
   }
 }
